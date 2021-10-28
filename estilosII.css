@@ -1,0 +1,159 @@
+
+.dropbtn {
+  background-color:rgb(251, 179, 126);
+  color: white;
+  padding: 12px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px 50px 30px 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FCF8BC ;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 25px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 25px;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Style the header */
+header {
+  padding: 25px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+  background-color: pink; /* For browsers that do not support gradients */
+  background-image: linear-gradient(orange, yellow, red);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10%;
+  height: 370px; /* only for demonstration, should be removed */
+  background:rgba(242, 243, 244) ;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 90%;
+  background-color: white;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+
+}
+}
+div.grid-container{
+  margin: 5px;
+  float: left;
+  width: 100%;
+  grid-template-columns: auto auto;
+}
+
+div.grid-container:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 8px;
+  padding: 8px;
+
+}
+
+.grid-container > div {
+  background-color: rgb(255, 247, 230);
+  font-size: 20px;
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid black; 
+}
+body
+    {
+   font-family: 'Raleway', sans-serif;  
+    }
+.maps {
+   width: 1239px;
+   height:55px;
+   background-color: rgb(251, 179, 126);
+   margin: 1px;
+   }
+.maps iframe{
+  margin: 13px;
+  width: 1210px;
+  height: 400;
+  float: center;
+}
+footer{
+  padding: 10px;
+  text-align: center;
+  color: white;
+   background-color: pink; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow);
+}
+  
+  
